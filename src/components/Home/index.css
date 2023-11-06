@@ -1,0 +1,16 @@
+.tri {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
+  background-size: cover;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+h1 {
+  height: 70px;
+}
+.uls {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
