@@ -14,6 +14,7 @@ export default class Home extends Component {
   data = async () => {
     const l = await fetch('https://apis.ccbp.in/ipl')
     const {teams} = await l.json()
+    this.setState(prev => ({load: teams}))
   }
 
   render() {
