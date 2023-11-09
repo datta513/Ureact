@@ -1,1 +1,10 @@
-/* Write your CSS here */
+.style {
+  background-color: #475569;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  border-radius: 20px;
+  align-items: center;
+  margin: 30px;
+}

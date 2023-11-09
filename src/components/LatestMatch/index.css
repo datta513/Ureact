@@ -1,1 +1,6 @@
-/* Write your CSS here */
+.pcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 15px;
+}

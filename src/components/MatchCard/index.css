@@ -1,1 +1,16 @@
-/* Write your CSS here */
+.Gc {
+  color: green;
+}
+.Rc {
+  color: Red;
+}
+.cards {
+  margin: 30px;
+  background-color: #1e293b;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}

@@ -1,1 +1,38 @@
-/* Write your CSS here */
+.RCB {
+  background-color: red;
+}
+.KKR {
+  background-color: grey;
+}
+.KXP {
+  background-color: orangered;
+}
+
+.CSK {
+  background-color: yellow;
+}
+.RR {
+  background-color: blue;
+}
+.MI {
+  background-color: blue;
+}
+.SH {
+  background-color: orange;
+}
+.DC {
+  background-color: blue;
+}
+.sty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+.unlis {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}

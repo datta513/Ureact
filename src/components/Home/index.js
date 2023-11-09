@@ -14,7 +14,14 @@ export default class Home extends Component {
   data = async () => {
     const l = await fetch('https://apis.ccbp.in/ipl')
     const {teams} = await l.json()
-    this.setState(prev => ({load: teams}))
+    console.log(teams)
+    const it = teams.map(each => ({
+      Name: each.name,
+      TeamImageUrl: each.team_image_url,
+      Id: each.id,
+    }))
+    console.log(it)
+    this.setState(prev => ({load: it}))
   }
 
   render() {
@@ -30,15 +37,19 @@ export default class Home extends Component {
           height="70"
         />
         <h1>IPL Dashboard</h1>
-        <ul className="uls">
-          {k ? (
-            <div data-testid="loader">
-              <Loader type="Rings" color="#ffffff" height={50} />
-            </div>
-          ) : (
-            load.map(each => <TeamCard ele={each} key={each.id} />)
-          )}
-        </ul>
+        {k ? (
+          <div data-testid="loader">
+            <Loader type="Rings" color="#ffffff" height={50} />
+          </div>
+        ) : (
+          <div>
+            <ul className="uls">
+              {load.map(each => (
+                <TeamCard ele={each} key={each.Id} />
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     )
   }
